@@ -87,7 +87,7 @@ void eliminaElementos(List*L, int elem)
     {
       if(*dato == elem)
       {
-        popCurrent(L);
+        pop(L);
       }
       dato = (int*)next(L);
     }
@@ -112,6 +112,7 @@ void copia_pila(Stack* P1, Stack* P2)
     {
       push(P2, dato);
     }
+  
 }
 
 /*
