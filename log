@@ -48,3 +48,9 @@ exercises.c:84:8: error: variable ‘dato’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 4694467
+Wed 20 Mar 2024 08:38:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|2
+total_score: 40/70
+6d9ede8
