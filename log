@@ -121,3 +121,9 @@ exercises.c:105:10: error: unused variable ‘PilaA’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 dd770c4
+Wed 20 Mar 2024 09:00:56 PM UTC: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  3|2
+total_score: 40/70
+db7548b
