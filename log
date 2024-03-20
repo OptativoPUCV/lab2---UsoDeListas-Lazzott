@@ -107,3 +107,17 @@ Wed 20 Mar 2024 08:55:34 PM UTC:
  1 file changed, 1 insertion(+)
  tests:  0|0
 f03561e
+Wed 20 Mar 2024 09:00:41 PM UTC: 
+ exercises.c | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:106:9: error: unused variable ‘dato’ [-Werror=unused-variable]
+  106 |   void* dato;
+      |         ^~~~
+exercises.c:105:10: error: unused variable ‘PilaA’ [-Werror=unused-variable]
+  105 |   Stack* PilaA = create_stack();
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dd770c4
