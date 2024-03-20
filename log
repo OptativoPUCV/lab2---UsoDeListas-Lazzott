@@ -28,3 +28,23 @@ Wed 20 Mar 2024 08:29:09 PM UTC:
  tests:  3|2
 total_score: 40/70
 7d5fde7
+Wed 20 Mar 2024 08:37:47 PM UTC: 
+ exercises.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:85:25: error: statement with no effect [-Werror=unused-value]
+   85 |   dato = (int*)first(L);0
+      |                         ^
+exercises.c:85:26: error: expected ‘;’ before ‘while’
+   85 |   dato = (int*)first(L);0
+      |                          ^
+      |                          ;
+   86 |   while(dato != NULL)
+      |   ~~~~~                   
+exercises.c:84:8: error: variable ‘dato’ set but not used [-Werror=unused-but-set-variable]
+   84 |   int* dato;
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4694467

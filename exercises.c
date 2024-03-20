@@ -82,7 +82,7 @@ posiciona en el elemento anterior.
 void eliminaElementos(List*L, int elem)
 {
   int* dato;
-  dato = (int*)first(L);
+  dato = (int*)first(L);0
   while(dato != NULL)
     {
       if(*dato == elem)
@@ -100,7 +100,18 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2)
+{
+  Stack* Paux = create_stack();
+  void* dato;
+  while((dato = pop(P1)) != NULL)
+    {
+      push(Paux, dato); 
+    }
+  while((dato = pop(Paux)) != NULL)
+    {
+      push(P2, dato);
+    }
 }
 
 /*
