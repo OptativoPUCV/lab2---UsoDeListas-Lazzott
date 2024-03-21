@@ -375,3 +375,22 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 7d6fcdb
+Thu 21 Mar 2024 01:18:28 PM UTC: 
+ exercises.c | 13 -------------
+ 1 file changed, 13 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:127:17: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  127 |   Stack* pila = createStack();
+      |                 ^~~~~~~~~~~
+      |                 create_stack
+exercises.c:127:17: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:127:10: error: unused variable ‘pila’ [-Werror=unused-variable]
+  127 |   Stack* pila = createStack();
+      |          ^~~~
+exercises.c:128:1: error: control reaches end of non-void function [-Werror=return-type]
+  128 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+4537368
