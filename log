@@ -546,3 +546,24 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
 cc1: all warnings being treated as errors
 Compilation failed
 e0a46db
+Thu 21 Mar 2024 01:32:50 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:38: error: expected statement before ‘)’ token
+  129 |   for (i = 0; cadena[i] != '\0'; i++))
+      |                                      ^
+exercises.c:133:23: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  133 |         push(P, cadena[i]);
+      |                 ~~~~~~^~~
+      |                       |
+      |                       char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9b7f1c6
